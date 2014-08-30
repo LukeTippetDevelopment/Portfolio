@@ -1,8 +1,43 @@
 .navHolder{
-    margin-left:auto;
-    margin-right:auto;
 }
 
-mainBar {
+.mainBar {
     height:300px;
+    background-color:#822B66;
+}
+
+.navHolder{
+    color:white;
+    font-size:18px;
+}
+
+.profileNameHolder{
+    margin-bottom:50px;
+}
+
+.profileImageHolder{
+    margin-bottom:10px;
+}
+
+.profileImage{
+    margin-top:20px;
+    max-width:104px;
+    border-radius: 3px;
+}
+
+.profileName{
+    color:white;
+    font-size:20px;
+}
+
+.aboutSection {
+    min-height:250px;
+}
+
+.yearHolder{
+    margin-top:100px;
+}
+
+.detailsHolder{
+    margin-top:50px;
 }
