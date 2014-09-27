@@ -4,33 +4,36 @@
     <meta name="viewport" content="width=device-width" />
     <title>My Portfolio</title>
     <script src="/jquery-2.1.1.min.js"></script>
+    <script src="/jquery.particleground.min.js"></script>
     <script src="/bootstrap.min.js"></script>
     <link href="/LukePortfolio.css" rel="stylesheet" />
     <link href="/bootstrap.min.css" rel="stylesheet" />
     <script type="text/javascript" src="//cdn.mailto.ninja/js/v0/mailto.ninja.js"></script>
 </head>
 <body>
-    <div class="col-xs-12 mainBar">
-        <div class="col-xs-12 profileImageHolder">
-            <div class="col-xs-4 col-sm-2 col-xs-offset-5"><img class="profileImage" src="https://cloud.githubusercontent.com/assets/2833307/4097986/43002198-2ff2-11e4-83d3-a4bb440fdb9c.jpg" /></div>
-        </div>
-        <div class="col-xs-12 profileNameHolder">
-            <div class="col-xs-4 col-sm-2 col-xs-offset-5 profileName">Luke Tippet</div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-sm-offset-3 navHolder">
-            <div class="col-xs-3">Home</div>
-            <div class="col-xs-3">About me</div>
-            <div class="col-xs-3">My work</div>
-            <div class="col-xs-3">Contact me</div>
-        </div>
+    <div class="col-xs-12 mainBar" id="mainBar">
+        <div class="navHolder">
+            <div class="experienceLink">Experience</div>
+            <div class="technologiesLink">Technologies</div>
+            <div class="profileLink profileName">
+                <div>
+                    <img class="profileImage" src="https://cloud.githubusercontent.com/assets/2833307/4097986/43002198-2ff2-11e4-83d3-a4bb440fdb9c.jpg" alt="profile picture" />
+                </div>
+                <div class="nameDiv">
+                    Luke Tippet
+                </div>
+            </div>
+            <div class="myWorkLink">My work</div>
+            <div class="contactLink">Contact</div>
+        </div> 
     </div>
     <div class="col-xs-12 aboutSection">
-        <div class="col-xs-1 col-sm-2 col-md-2 col-md-offset-2 yearHolder">
-            <img src="https://cloud.githubusercontent.com/assets/2833307/4098193/abd653a6-3009-11e4-9ad4-f74f41fed057.png" />
+        <!--<div class="col-xs-1 col-sm-2 col-md-2 col-md-offset-2 yearHolder">
+            <img src="https://cloud.githubusercontent.com/assets/2833307/4098056/f8be74d8-2ff9-11e4-9159-347193d908d7.png" />
         </div>
         <div class="col-xs-11 col-sm-10 col-md-6 col-md-offset-1 detailsHolder">
-            I'm currently working at Motor Trade Finance (MTF) as a web developer, with a main focus in front end development.
-        </div>
+            I'm currently working at Motor Trade Finance (MTF) as a web developer, with a main focus in front end development along with small amounts of database development.
+        </div>-->
     </div>
     <div class="col-xs-12 myWorkSection">
 
@@ -62,6 +65,17 @@
         });
 
     </script>-->
+    <script>
+        $(document).ready(function() {
+            $('#mainBar').particleground({
+                dotColor: '#C381AD',
+                lineColor: '#C381AD'
+            });
+            //$('.navHolder').css({
+            //    'margin-top': -($('.intro').height() / 2)
+            //});
+        });
+    </script>
     <script type="text/javascript">mailto.ninja()</script>
 </body>
 </html>
