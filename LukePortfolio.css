@@ -1,14 +1,41 @@
 .navHolder{
 }
 
+.pg-canvas{
+    position:fixed;
+    z-index:0;
+}
+
 .mainBar {
     height:300px;
     background-color:#822B66;
+    /*A25087*/
+    background: linear-gradient(#822B66 5%, #A25087, #822B66 95%);
 }
 
 .navHolder{
+    position:relative;
+    z-index:1;
+    margin-top: 95px;
     color:white;
     font-size:18px;
+    margin-left:auto;
+    margin-right:auto;
+    width:690px;
+    height:215px;    
+}
+
+.profileLink .nameDiv{
+    margin-left:0;
+}
+
+.navHolder div{
+    margin-left:15px;
+    margin-right:15px;
+}
+
+.experienceLink, .technologiesLink, .profileLink, .myWorkLink, .contactLink{
+    display:inline-block;
 }
 
 .profileNameHolder{
@@ -20,14 +47,16 @@
 }
 
 .profileImage{
-    margin-top:20px;
+    margin-bottom:20px;
     max-width:104px;
     border-radius: 3px;
 }
 
+
+
 .profileName{
     color:white;
-    font-size:20px;
+    font-size:25px;
 }
 
 .aboutSection {
@@ -35,7 +64,7 @@
 }
 
 .yearHolder{
-    
+    margin-top:100px;
 }
 
 .detailsHolder{
