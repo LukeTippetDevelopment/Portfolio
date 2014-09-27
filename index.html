@@ -13,8 +13,8 @@
 <body>
     <div class="col-xs-12 mainBar" id="mainBar">
         <div class="navHolder">
-            <div class="experienceLink">Experience</div>
-            <div class="technologiesLink">Technologies</div>
+            <div class="experienceLink" id="experienceLink">Experience</div>
+            <div class="technologiesLink" id="technologiesLink">Technologies</div>
             <div class="profileLink profileName">
                 <div>
                     <img class="profileImage" src="https://cloud.githubusercontent.com/assets/2833307/4097986/43002198-2ff2-11e4-83d3-a4bb440fdb9c.jpg" alt="profile picture" />
@@ -23,48 +23,61 @@
                     Luke Tippet
                 </div>
             </div>
-            <div class="myWorkLink">My work</div>
-            <div class="contactLink">Contact</div>
+            <div class="myWorkLink" id="myWorkLink">My work</div>
+            <div class="contactLink" id="contactLink">Contact</div>
         </div> 
     </div>
-    <div class="col-xs-12 aboutSection">
-        <!--<div class="col-xs-1 col-sm-2 col-md-2 col-md-offset-2 yearHolder">
-            <img src="https://cloud.githubusercontent.com/assets/2833307/4098056/f8be74d8-2ff9-11e4-9159-347193d908d7.png" />
+    <div class="col-xs-12 experienceSection" id="experienceSection">
+        <div class="col-lg-3 col-lg-offset-1 col-sm-2 col-xs-1">
+            <ul class="yearList">
+                <li>2014</li>
+                <li>2013</li>
+                <li>2012</li>
+                <li>2011</li>
+            </ul>
         </div>
-        <div class="col-xs-11 col-sm-10 col-md-6 col-md-offset-1 detailsHolder">
-            I'm currently working at Motor Trade Finance (MTF) as a web developer, with a main focus in front end development along with small amounts of database development.
-        </div>-->
+        <div class="col-lg-6 col-sm-8 col-sm-offset-1 col-xs-9 col-xs-offset-1">
+            <ul class="detailsList">
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ex ante, eleifend in posuere id, auctor quis ipsum. Phasellus scelerisque tincidunt lacus eu egestas. Fusce non dolor at diam feugiat malesuada. Cras rutrum velit sapien, vitae cursus leo mollis id. </li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ex ante, eleifend in posuere id, auctor quis ipsum. Phasellus scelerisque tincidunt lacus eu egestas. Fusce non dolor at diam feugiat malesuada. Cras rutrum velit sapien, vitae cursus leo mollis id. </li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ex ante, eleifend in posuere id, auctor quis ipsum. Phasellus scelerisque tincidunt lacus eu egestas. Fusce non dolor at diam feugiat malesuada. Cras rutrum velit sapien, vitae cursus leo mollis id. </li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ex ante, eleifend in posuere id, auctor quis ipsum. Phasellus scelerisque tincidunt lacus eu egestas. Fusce non dolor at diam feugiat malesuada. Cras rutrum velit sapien, vitae cursus leo mollis id. </li>
+            </ul>
+        </div>
     </div>
-    <div class="col-xs-12 myWorkSection">
+       
 
-    </div>
-    <div class="col-xs-12 contactMeSection"></div>
-       <!--<script>
-        $("#homeLink").click(function () {
+    <div class="col-xs-12 technologiesSection" id="technologiesSection"></div>
+
+    <div class="col-xs-12 myWorkSection" id="myWorkSection"></div>
+
+    <div class="col-xs-12 contactMeSection" id="contactMeSection"></div>
+       <script>
+        $("#experienceLink").click(function () {
             $('html, body').animate({
-                scrollTop: $("#home").offset().top
+                scrollTop: $("#experienceSection").offset().top
             }, 600);
         });
 
-        $("#aboutUsLink").click(function () {
+        $("#technologiesLink").click(function () {
             $('html, body').animate({
-                scrollTop: $("#aboutUs").offset().top
+                scrollTop: $("#technologiesSection").offset().top
             }, 600);
         });
 
-        $("#ourCoffeeLink").click(function () {
+        $("#myWorkLink").click(function () {
             $('html, body').animate({
-                scrollTop: $("#ourCoffee").offset().top
+                scrollTop: $("#myWorkSection").offset().top
             }, 600);
         });
 
-        $("#contactUsLink").click(function () {
+        $("#contactLink").click(function () {
             $('html, body').animate({
-                scrollTop: $("#contactUs").offset().top
+                scrollTop: $("#contactMeSection").offset().top
             }, 600);
         });
 
-    </script>-->
+    </script>
     <script>
         $(document).ready(function() {
             $('#mainBar').particleground({
