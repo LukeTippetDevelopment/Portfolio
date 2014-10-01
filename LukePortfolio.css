@@ -57,7 +57,7 @@
     background-image: url("https://cloud.githubusercontent.com/assets/2833307/4433101/8ad021f2-46be-11e4-9d50-b1255427d19f.jpg");
     background-repeat: no-repeat;
     /*background-size: 1903px 1000px;*/
-    background-size: 100% 100%;
+    background-size: cover;
 }
 
 .aboutSection, .skillsSection, .portfolioSection, .contactSection{
